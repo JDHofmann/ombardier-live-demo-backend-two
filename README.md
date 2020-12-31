@@ -26,5 +26,16 @@ Start up your rails server and enjoy
 rails s
 ```
 
+# Heroku
+
+- install heroku cli
+
+then:
+```bash
+heroku create
+git push heroku main
+heroku run rake db:migrate
+heroku run rake db:seed
+```
 
 
