@@ -1,24 +1,30 @@
-# README
+# Tombardier Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tombardier - Portfolio Building Made Simple
 
-Things you may want to cover:
+A browser based portfolio builder for developers to quickly build and deploy a personal site
 
-* Ruby version
 
-* System dependencies
+Built with a Ruby on Rails API backend(this file), and a React/Redux front-end for Flatiron School Software Engineering Program
 
-* Configuration
 
-* Database creation
+## Installation
 
-* Database initialization
+Once you fork and clone this repo
 
-* How to run the test suite
+Simply run bundle install to install tombardier's frontend.
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bundle install
+```
 
-* Deployment instructions
+# Getting Started with Tombardier Backend
 
-* ...
+Start up your rails server and enjoy
+
+```bash
+rails s
+```
+
+
+
