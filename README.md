@@ -28,7 +28,9 @@ rails s
 
 # Heroku
 
-- install heroku cli
+- Download and install the Heroku CLI.
+-https://devcenter.heroku.com/articles/heroku-cli
+
 
 then:
 ```bash
@@ -64,3 +66,6 @@ Comment out Line 32 in Config/Production.rb
 then add this:
 "# Store files on Amazon S3.
   config.active_storage.service = :amazon"
+
+
+reset heroku db: heroku pg:reset DATABASE

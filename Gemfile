@@ -43,3 +43,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jwt", "~> 2.2"
 
 gem 'active_model_serializers', '~> 0.10.0'
+
+# gem S3 from 'aws-sdk/clients/s3';
+
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
