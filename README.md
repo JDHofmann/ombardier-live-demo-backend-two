@@ -4,6 +4,8 @@
 
 ### *Portfolio Building Made Simple*
 
+---
+
 <br>
 
 Tombardier is a browser based portfolio builder for developers to quickly build and deploy a personal site
@@ -13,6 +15,7 @@ Built with a Ruby on Rails API backend(this file), and a React/Redux front-end f
 Check out the **[Live Demo](https://tombardier.netlify.app/)** to try it out.
 
 <br>
+
 ---
 ---
 
@@ -36,8 +39,10 @@ There's not much more than that, to run Tombardier locally start up your rails s
 `rails s`
 
 <br>
+
 ---
 ---
+
 <br>
 
 ## Getting Tombardier Backend into Production
@@ -49,6 +54,10 @@ There's not much more than that, to run Tombardier locally start up your rails s
 <br>
 
 cd into your file
+
+<br>
+
+---
 
 <br>
 
@@ -83,6 +92,10 @@ Heroku should now be building out your application
 
 <br>
 
+---
+
+<br>
+
 ### **Adding Cloud Storage**
 
 <br>
@@ -104,6 +117,10 @@ Create an IAM
 <br>
 
 **MAKE SURE YOU SAVE THESE CREDENTIALS SO YOU CAN ADD THEM TO YOUR RAILS PROJECT**
+
+<br>
+
+---
 
 <br>
 
@@ -175,7 +192,8 @@ This will set our environments to store our Active Storage Blobs in our new clou
 <br>
 
 ---
----
+
+<br>
 
 ### **Configure Heroku with our Rails Master Key**
 
@@ -191,6 +209,14 @@ replacing *12345678* with your rails master key
 
 <br>
 
+---
+---
+
+<br>
+
+## Troubleshooting
+
+<br>
 
 If you run into trouble and need to reset the database, use
 ```heroku pg:reset DATABASE```
@@ -199,3 +225,8 @@ then run these again
     heroku run rake db:migrate
     heroku run rake db:seed
 ```
+<br>
+
+**Some helpful article and videos**
+
+https://pragmaticstudio.com/tutorials/using-active-storage-in-rails
