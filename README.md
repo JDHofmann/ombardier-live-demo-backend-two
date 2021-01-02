@@ -17,7 +17,7 @@ Check out the **[Live Demo](https://tombardier.netlify.app/)** to try it out.
 <br>
 
 
-**This repo is built to run on it's companion [frontend]() so I recommend setting that up once you have this repo working locally.**
+**This repo is built to run as an API for it's companion [frontend]() so I recommend setting that up once you have this repo working locally.**
 
 <br>
 
