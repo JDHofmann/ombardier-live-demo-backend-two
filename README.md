@@ -16,6 +16,11 @@ Check out the **[Live Demo](https://tombardier.netlify.app/)** to try it out.
 
 <br>
 
+
+**This repo is built to run on it's companion [frontend]() so I recommend setting that up once you have this repo working locally.**
+
+<br>
+
 ---
 ---
 
@@ -41,57 +46,6 @@ There's not much more than that, to run Tombardier locally start up your rails s
 <br>
 
 ---
----
-
-<br>
-
-## Getting Tombardier Backend into Production
-
-<br>
-
-*So far, I have only deployed this app through Heroku and using AWS cloud storage, if you choose a different route and have success, please share with me and we can add further instructions to this README*
-
-<br>
-
-cd into your file
-
-<br>
-
----
-
-<br>
-
-### **Using Heroku**
-
-<br>
-
-You'll need two things for this part, **A Heroku Account** and **The Heroku CLI**
-
-<br>
-
-- If you don't already have a heroku account, head to [heroku](www.heroku.com) to get started.
-
-- If you don't already have the heorku **CLI** first [download](https://devcenter.heroku.com/articles/heroku-cli) and install the Heroku CLI.
-
-<br>
-
-
-Once you are setup with heroku, run
-
-`heroku create`
-
-`git push heroku main`
-
-`heroku run rake db:migrate`
-
-`heroku run rake db:seed`
-
-<br>
-
-Heroku should now be building out your application
-
-<br>
-
 ---
 
 <br>
@@ -194,6 +148,71 @@ This will set our environments to store our Active Storage Blobs in our new clou
 ---
 
 <br>
+
+---
+
+<br>
+
+**At this point I recommend setting up the frontend to ensure that your cloud storage works locally before moving onto production**
+
+<br>
+
+---
+
+<br>
+
+## Getting Tombardier Backend into Production
+
+<br>
+
+*So far, I have only deployed this app through Heroku and using AWS cloud storage, if you choose a different route and have success, please share with me and we can add further instructions to this README*
+
+<br>
+
+cd into your file
+
+<br>
+
+---
+
+<br>
+
+### **Using Heroku**
+
+<br>
+
+You'll need two things for this part, **A Heroku Account** and **The Heroku CLI**
+
+<br>
+
+- If you don't already have a heroku account, head to [heroku](www.heroku.com) to get started.
+
+- If you don't already have the heorku **CLI** first [download](https://devcenter.heroku.com/articles/heroku-cli) and install the Heroku CLI.
+
+<br>
+
+
+Once you are setup with heroku, run
+
+`heroku create`
+
+`git push heroku main`
+
+`heroku run rake db:migrate`
+
+`heroku run rake db:seed`
+
+<br>
+
+Heroku should now be building out your application
+
+<br>
+
+---
+
+<br>
+
+
 
 ### **Configure Heroku with our Rails Master Key**
 
