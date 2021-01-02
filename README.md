@@ -174,34 +174,22 @@ This will set our environments to store our Active Storage Blobs in our new clou
 
 <br>
 
-
 ---
 ---
 
 ### **Configure Heroku with our Rails Master Key**
 
-heroku - settings :
-go to Config Vars and reveal config vars
-add the key: "RAILS_MASTER_KEY" with the value of your master.key file
+<br>
 
-or heroku config:set RAILS_MASTER_KEY=12345678 on the command line
+Open the *master.key* file inside the *config* folder
 
-# Image Storage
+Copy the contents of the file and run
 
-If you'd like to configure Tombardier with your own image storage, ensure you update all the files below:
+`heroku config:set RAILS_MASTER_KEY=12345678`
 
-once you set up your cloud storage service:
-    - go to config/storage.yml 
-        - add your service underneath the local sections
-        - namespace all your details under a title for the serivice
-    - comment out config/environments/development
-        line 29:
-              config.active_storage.service = :local
-        - then add your servie title from config/storage.yml
-    - comment out config/environments/production
-        line 33:
-              config.active_storage.service = :local
-        - then add your servie title from config/storage.yml
+replacing *12345678* with your rails master key
+
+<br>
 
 
 If you run into trouble and need to reset the database, use
