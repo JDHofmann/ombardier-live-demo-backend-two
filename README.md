@@ -54,11 +54,11 @@ There's not much more than that, to run Tombardier locally start up your rails s
 
 <br>
 
-Next let's get started with cloud storage 
+Next let's get started with cloud storage. Our app works fine locally, but storing images locally won't work in production, so let's add cloud storage and ensure it works before moving to production. 
 
 <br>
 
-- *Once again, I have only gone through this process for AWS cloud storage, but there are tons of ways to do this, and possibly easier ways* 
+- *I have only gone through this process for AWS cloud storage, but there are tons of ways to do this, and possibly easier ways* 
 
 <br>
 
@@ -153,7 +153,7 @@ This will set our environments to store our Active Storage Blobs in our new clou
 
 <br>
 
-**At this point I recommend setting up the frontend to ensure that your cloud storage works locally before moving onto production**
+**At this point I recommend setting up the [frontend]() to ensure that everything works locally before moving onto production**
 
 <br>
 
@@ -169,9 +169,6 @@ This will set our environments to store our Active Storage Blobs in our new clou
 
 <br>
 
-cd into your file
-
-<br>
 
 ---
 
@@ -228,6 +225,19 @@ replacing *12345678* with your rails master key
 
 <br>
 
+Everything should be good for your backend now, easier said than done, I know.
+
+Run your heroku app and make sure you add ***/users/*** to the url, you should have a nice serialized json waiting for you there.
+
+<br>
+
+If everything works, *Congrats!* you've got the hard part, the frontend is way easier!
+
+<br>
+
+If not, comb through this readme again and double check your files, or just write me an email and describe where my explanation went wrong.
+
+<br>
 ---
 ---
 
@@ -237,13 +247,16 @@ replacing *12345678* with your rails master key
 
 <br>
 
-If you run into trouble and need to reset the database, use
-```heroku pg:reset DATABASE```
-then run these again
-```
-    heroku run rake db:migrate
-    heroku run rake db:seed
-```
+If you run into trouble and need to reset the database, run
+
+`heroku pg:reset DATABASE`
+
+then run these commands once again
+
+`heroku run rake db:migrate`
+
+`heroku run rake db:seed`
+
 <br>
 
 **Some helpful article and videos**
